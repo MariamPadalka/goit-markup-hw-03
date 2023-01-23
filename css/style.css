@@ -21,6 +21,32 @@
   --light-bgc-color: #f4f4fd;
 }
 
+/* RESET */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-txt-color);
@@ -56,6 +82,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .btn {
@@ -79,6 +106,7 @@ body {
   line-height: calc(24 / 18);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo-header {
@@ -90,11 +118,14 @@ body {
 }
 
 .nav-link {
+  display: block;
   color: var(--secondary-txt-color);
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .auth-nav-link {
@@ -111,14 +142,16 @@ body {
 /* HERO */
 .hero {
   background-color: var(--main-bgc-color);
+  text-align: center;
+  /* padding: ; */
 }
 
 .hero-title {
   color: var(--white-txt-color);
   font-size: 56px;
   line-height: calc(60 / 56);
-  text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -156,4 +189,56 @@ body {
 .btn-light-bgc:focus {
   background-color: var(--accent-bgc-color);
   color: var(--white-txt-color);
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.hero-btn {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  min-height: 56px;
+  text-align: center;
+}
+
+.advantages-list-item .title {
+  margin-bottom: 8px;
+}
+
+.services {
+  padding-bottom: 120px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  margin-right: auto;
+}
+
+.auth-nav-list {
+  display: flex;
 }
