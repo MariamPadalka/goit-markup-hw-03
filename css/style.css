@@ -1,0 +1,159 @@
+:root {
+  /* =================TEXT COLORS================= */
+  /* slate */
+  --main-txt-color: #434455;
+  /* navy-blue */
+  --secondary-txt-color: #2e2f42;
+  /* ocean */
+  --accent-txt-color: #404bbf;
+  /* Iris */
+  --primary-brand-color: #4d5ae5;
+  --white-txt-color: #ffffff;
+
+  /* =================BACKGROUND COLORS================= */
+  /* navy-blue */
+  --main-bgc-color: #2e2f42;
+  /* cornflower */
+  --nav-bgc-color: #e7e9fc;
+  /* ocean */
+  --accent-bgc-color: #404bbf;
+  /* cloud */
+  --light-bgc-color: #f4f4fd;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-txt-color);
+}
+
+/* === COMMON styles ===*/
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  color: var(--secondary-txt-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+}
+
+.text {
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+}
+
+.section-title {
+  color: var(--secondary-txt-color);
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.04em;
+  border: none;
+  cursor: pointer;
+}
+
+/* =========================== STUDIO page =========================== */
+/* HEADER */
+
+.logo {
+  color: var(--primary-brand-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-header {
+  color: var(--secondary-txt-color);
+}
+
+.auth-nav {
+  font-style: normal;
+}
+
+.nav-link {
+  color: var(--secondary-txt-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+}
+
+.auth-nav-link {
+  color: currentColor;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.auth-nav-link:hover,
+.auth-nav-link:focus {
+  color: var(--accent-txt-color);
+}
+
+/* HERO */
+.hero {
+  background-color: var(--main-bgc-color);
+}
+
+.hero-title {
+  color: var(--white-txt-color);
+  font-size: 56px;
+  line-height: calc(60 / 56);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.hero-btn {
+  background-color: var(--primary-brand-color);
+  color: var(--white-txt-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-bgc-color);
+}
+
+/* ADVANTAGES */
+
+/* FOOTER */
+.footer {
+  background-color: var(--main-bgc-color);
+}
+
+.footer-text {
+  color: var(--nav-bgc-color);
+}
+
+.logo-footer {
+  color: var(--light-bgc-color);
+}
+
+/* =========================== PORTFOLIO page =========================== */
+.btn-light-bgc {
+  background-color: var(--nav-bgc-color);
+  color: var(--primary-brand-color);
+}
+
+.btn-light-bgc:hover,
+.btn-light-bgc:focus {
+  background-color: var(--accent-bgc-color);
+  color: var(--white-txt-color);
+}
