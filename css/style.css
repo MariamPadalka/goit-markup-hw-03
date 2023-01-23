@@ -188,7 +188,8 @@ body {
 .hero {
   background-color: var(--main-bgc-color);
   text-align: center;
-  /* padding: ; */
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -197,6 +198,10 @@ body {
   line-height: calc(60 / 56);
   letter-spacing: 0.02em;
   margin-bottom: 48px;
+  width: 496px;
+  min-height: 120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn {
@@ -207,7 +212,6 @@ body {
   padding: 16px 32px;
   min-width: 169px;
   min-height: 56px;
-  text-align: center;
 }
 
 .hero-btn:hover,
