@@ -19,6 +19,8 @@
   --accent-bgc-color: #404bbf;
   /* cloud */
   --light-bgc-color: #f4f4fd;
+  /* white */
+  --white-bgc-color: #ffffff;
 
   /* Others */
   --indent: 24px;
@@ -121,6 +123,10 @@ body {
 
 /* =========================== STUDIO page =========================== */
 /* HEADER */
+.header {
+  border-bottom: 1px solid var(--nav-bgc-color);
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -175,6 +181,8 @@ body {
 
 .auth-nav-link {
   color: currentColor;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-link:hover,
@@ -222,6 +230,8 @@ body {
 .wrapper {
   padding: 32px 16px;
   text-align: center;
+  border: 1px solid var(--nav-bgc-color);
+  border-top: none;
 }
 
 /* ADVANTAGES */
@@ -239,6 +249,7 @@ body {
 .team {
   padding-top: 120px;
   padding-bottom: 120px;
+  background-color: var(--light-bgc-color);
 }
 
 .team-list-item {
@@ -246,6 +257,7 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-bgc-color);
 }
 
 /* FOOTER */
@@ -266,8 +278,12 @@ body {
 }
 
 /* =========================== PORTFOLIO page =========================== */
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .portfolio-filter-list {
-  margin-top: 96px;
   margin-bottom: 72px;
   width: 586px;
   margin-left: auto;
@@ -280,12 +296,7 @@ body {
 }
 
 .portfolio-list {
-  margin-bottom: 120px;
   row-gap: 48px;
-}
-
-.portfolio-list-item {
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .btn-light-bgc {
